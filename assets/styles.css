@@ -1,17 +1,18 @@
 :root{
     --dark: #0f082e;
     --light: #56aab9;  
-
 }
 html {
     /* This sets 1 rem equal to 10px */
     font-size: 62.5%
 }
+/* contains my name and nav bar */
 header{
     background-color:var(--dark);
     position: relative;
     height: 8rem;
 }
+/* My name */
 h1{
     background-color: var(--light);
     display: inline-block;
@@ -42,9 +43,11 @@ ul li {
     padding-bottom: 3px;
     margin-left: 2rem;
 }
+/* adds a thick underline to nav bar links */
 nav ul li {
     border-bottom: .4rem solid var(--light);
 }
+/* removes the underline from anchor tags in nav and footer */
 ul li a{
     text-decoration: none;
     font-size: 2rem;
@@ -70,17 +73,18 @@ color: var(--light);
 background-color: var(--dark);
 display: inline-block;
 }
+/* container for each section: about me, work, contact me */
 .section-box{
     display: flex;
     margin-bottom: 2rem;
 }
+/* sets main content for each section to the right side of page */
 .main-content{
     width: 70%;
     margin-left: 2rem;
     font-size: 2rem;
     color: var(--dark);
 }
-
 /*aligns the section headers on the left side of the page  */
 .section-header{
     width:25%;
@@ -89,12 +93,12 @@ display: inline-block;
     text-align: right;
     padding-right: 1rem;
 }
+/* aligns all images in the work section */
 .all-image-container{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
 }
-
+/* spaced out images into rows in the work section */
 .image-row{
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +107,7 @@ display: inline-block;
     position: relative;
     margin-top: 2rem;
 }
+/* format title box for each work image */
 .image-name{
     position: absolute;
     left: 0;
@@ -111,6 +116,7 @@ display: inline-block;
     color: var(--dark);
     padding: 1rem;
 }
+/* created a container for each of the smaller work images */
 .small-image{
     width:48%;
     height: 25rem;
@@ -156,6 +162,7 @@ display: inline-block;
     color: var(--dark);
     border-bottom: 4px solid var(--dark);   
 }
+/* creates a spot to allow for a clear break in media query */
 .break{
     flex-basis: 0;
     margin-right: -4rem;
@@ -171,6 +178,7 @@ display: inline-block;
     .contactme-box ul{
         flex-wrap: wrap;  
     }
+    /* creates a break after email */
     .break{
         flex-basis: 100%;
         height: 2rem;
