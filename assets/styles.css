@@ -55,23 +55,24 @@ ul li a{
 nav ul li a{
     color: var(--light);
 }
-.subheader{
+/* .subheader{
     position: relative;
-}
+} */
 .header-image {
     height: 15rem;
     width: 100%;
 }
 /* Coder Climber Economist positioned */
 .subtitle{
-position: absolute;
+/* position: absolute;
 bottom: 3rem;
-right: 4rem;
+right: 4rem; */
 font-size: 3rem;
 padding: .5rem;
 color: var(--light);
 background-color: var(--dark);
 display: inline-block;
+z-index: 100;
 }
 /* container for each section: about me, work, contact me */
 .section-box{
